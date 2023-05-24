@@ -1,0 +1,46 @@
+seed: 1
+dim: 3
+system: 'B'
+method: 'w2'
+joint: True
+
+pretrain:
+  optimizer: 'lamb'
+  lr: 1.e-4
+  beta1: 0.9
+  beta2: 0.999
+  eps: 1.e-8
+  grad_clip: 1.0
+  batch_size: 4096
+  n_iter: 10_000
+  save_every: 1_000
+  warmup: 0
+
+train:
+  # optimizer: 'adabelief'
+  # lr: 2.e-4
+  # warmup: 0
+  # beta1: 0.9
+  # beta2: 0.999
+  # eps: 1.e-8
+  # grad_clip: 1.0
+
+  optimizer: 'kfac'
+  lr: 5.e-2
+
+  batch_size: 4096
+  n_time_steps: 10_000
+  save_every: 100
+  mcmc_iter_per_step: 30
+  dt: 5.e-3
+
+model:
+  num_layers: 4
+  num_hidden: 256
+  n_dets: 16
+  n_attention_heads: 4
+
+mcmc:
+  n_init_steps: 1_000
+  init_sigma: 1.0
+  rwmh_sigma: 2.e-1
