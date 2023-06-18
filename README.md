@@ -1,4 +1,4 @@
-# Wasserstein Quantum Monte Carlo
+# Wasserstein Quantum Monte Carlo (WQMC)
 
 This repository contains the original implementation of the experiments for "Wasserstein Quantum Monte Carlo: A Novel Approach for Solving the Quantum Many-Body Schrödinger Equation".
 
@@ -6,7 +6,13 @@ This repository contains the original implementation of the experiments for "Was
 
 ## Sketch of the algorithm
 
+|Fisher-Rao gradient flow (QVMC)| Wasserstein-2 gradient flow (WQMC)|
+|:--:|:--:|
+|![](https://github.com/necludov/wqmc/blob/main/assets/fr.gif)|![](https://github.com/necludov/wqmc/blob/main/assets/w2.gif)|
+
 ## Results
+
+![](https://github.com/necludov/wqmc/blob/main/assets/plots.png)
 
 ## Running the code
 
