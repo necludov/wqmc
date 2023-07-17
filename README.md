@@ -1,6 +1,6 @@
 # Wasserstein Quantum Monte Carlo (WQMC)
 
-This repository contains the original implementation of the experiments for "Wasserstein Quantum Monte Carlo: A Novel Approach for Solving the Quantum Many-Body Schrödinger Equation".
+This repository contains the original implementation of the experiments for ["Wasserstein Quantum Monte Carlo: A Novel Approach for Solving the Quantum Many-Body Schrödinger Equation"](https://arxiv.org/abs/2307.07050).
 
 --------------------
 
